@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>NewsAPP</title>
+</head>
+<body>
+    <div class="container" id="moveTop">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>News API</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <h4>Country</h4>
+                <select id="myCountry" class="form-control" onchange="myNews()"><span class="caret"></span>
+                    <option value="in">India</option>
+                    <option value="us">USA</option>
+                    <option value="gb">UK</option>
+                    <option value="ch">Switzerland</option>
+                    <option value="au">Australia</option>
+                    <option value="de">Germany</option>
+                    <option value="jp">Japan</option>
+                    <option value="se">Sweden</option>
+                    <option value="fr">France</option>
+                    <option value="ca">Canada</option>
+                    <option value="nl">Netherland</option>
+                    <option value="at">Austria</option>
+                    <option value="ae">UAE</option>
+                    <option value="ro">Russia</option>
+                    <option value="sg">Singapore</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>Category</h4>
+                <select id="myCategory" class="form-control" onchange="myNews()">
+                    <option value="general">General</option>
+                    <option value="entertainment">Entertainment</option>
+                    <option value="health">Health</option>
+                    <option value="science">Science</option>
+                    <option value="sports">Sports</option>
+                    <option value="technology">Technology</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <h4>Search</h4>
+                <input id="myQ" type="text" class="form-control" onclick="myNews()">
+            </div>
+            <div class="col-md-3">
+                <h4>The Hindu - Tamil</h4>
+                <button id="hindu" class="btn btn-primary">The Hindu</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="output" class="col-md-8">
+
+            </div>
+            <div class="col-md-4">
+                <h4>First News App Ever</h4>
+                <p>
+                    The News API is the first news app ever getting news for people form all the resource.
+                </p>
+            </div>
+        </div>
+    </div>
+<a href="#moveTop" class="btn btn-warning moveTop">Go To Top</a>
+    <script src="app.js"></script>
+</body>
+<footer class="bg-primary navbar-fixed-bottom text-center text-success"> &copy 2018 Copyrights: Gopinath V</footer>
+</html>

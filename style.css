@@ -1,0 +1,12 @@
+li{
+    list-style: none;
+}
+
+.moveTop{
+    position: fixed;
+    top: 80%;
+    bottom: 20%;
+    left: 80%;
+    height: 33px;
+    width: auto;
+}
